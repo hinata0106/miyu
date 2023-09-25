@@ -23,9 +23,6 @@
    <%= t.place %>
    <%= t.create_date %>
    <%= t.comment %>
-   <% t.tags.each do |tag| %>
-      <span><%= tag.name %></span>
-   <% end %>
 
     <% if user_signed_in? && current_user.id == t.user_id %>
     <%= link_to "編集する", edit_post_path(t.id) %>

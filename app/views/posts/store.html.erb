@@ -16,9 +16,7 @@
      <%= t.place %>
      <%= t.create_date %>
      <%= t.comment %>
-     <% t.tags.each do |tag| %>
-       <span><%= tag.name %></span>
-     <% end %>
+    
     </div>
 
     <% if user_signed_in? %>
